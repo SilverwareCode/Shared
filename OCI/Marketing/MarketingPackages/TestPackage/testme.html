@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .testContainer {
+            width: 800px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div id="remoteResourceContainer" class="testContainer"></div>
+
+    <script>
+        async function nactiZGithubu() {
+            const kontejner = document.getElementById('remoteResourceContainer');
+            // DŮLEŽITÉ: Musí to být adresa začínající raw.githubusercontent.com
+            const url = 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html';
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Nepodařilo se stáhnout soubor');
+
+                const text = await response.text();
+                kontejner.innerHTML = text;
+            } catch (error) {
+                console.error('Chyba:', error);
+                kontejner.innerHTML = 'Chyba při načítání obsahu z GitHubu.';
+            }
+        }
+
+        nactiZGithubu();
+    </script>
+
+</body>
+
+
+
+</html>
