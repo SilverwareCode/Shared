@@ -30,7 +30,7 @@ header {
     width: 200px;
     min-height: 200px;
     min-width: 200px;
-    background-image: url("../torus2.jpg");
+    background-image: url("../images/torus2.jpg");
     background-size: cover;
     background-position: center;
 }
