@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <script src="../js/remoteContentLoader.js"></script>
+    <!--<script src="../js/remoteContentLoader.js"></script>-->
     
-    <!--<script src="https://cdn.jsdelivr.net/gh/SilverwareCode/Shared@main/OCI/js/remoteContentLoader.js?v=3"></script>-->
+    <script src="https://cdn.jsdelivr.net/gh/SilverwareCode/Shared@main/OCI/js/remoteContentLoader.js?v="+ new Date().getTime();></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -59,7 +59,7 @@
         //getRemoteContent('carouselComponent', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/WebComponents/CarouselComponent.html');
 
         function onDomContentLoaded() {
-            getRemoteContent('slide1', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
+            //getRemoteContent('slide1', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
             getRemoteContent('slide2', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
             getRemoteContent('slide3', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
         }
