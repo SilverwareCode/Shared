@@ -17,7 +17,7 @@
 <body>
 
     <div id="carouselComponent">
-        <!--<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -48,7 +48,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </button>
-        </div>-->
+        </div>
     </div>
 
     <!--<script>
@@ -58,12 +58,13 @@
     
     <script>
         function onDomContentLoaded() {
-            //alert ('DOM content loaded');
-            //getRemoteContent('slide1', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
-            //getRemoteContent('slide2', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
-            //getRemoteContent('slide3', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
-
             getRemoteContent('carouselComponent', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/WebComponents/CarouselComponent.html?v=1');
+            //alert ('DOM content loaded');
+            getRemoteContent('slide1', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
+            getRemoteContent('slide2', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
+            getRemoteContent('slide3', 'https://raw.githubusercontent.com/SilverwareCode/Shared/refs/heads/main/OCI/Marketing/MarketingPackages/TestPackage/index.html');
+
+            
         }
 
         document.addEventListener('DOMContentLoaded', onDomContentLoaded);
