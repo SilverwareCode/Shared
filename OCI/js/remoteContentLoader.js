@@ -15,4 +15,3 @@ async function getRemoteContent(targetContainerId, url) {
     }
 }
 
-nactiZGithubu();
